@@ -1,0 +1,246 @@
+
+body{
+    padding-top: 60px;
+    background-color: #f1f1f1;
+}
+
+#header{
+    height: 40px;
+    margin: 0 auto;
+    background: #0093da;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    border-bottom:3px solid #3c484f ;
+}
+
+#header ul{
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#header ul li{
+    width: 32%;
+    display: inline-block;
+    margin: 8px auto;
+    color: #ffffff;
+}
+
+#header ul li:first-child{
+    text-align: left;
+}
+
+#logo{
+    color: #ffffff;
+    font:18px Segoeuil;
+    margin: 0;
+}
+
+#logo a{
+    color: #ffffff;
+    font:18px Segoeuil;
+}
+
+#mainNav ul{
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+
+#mainNav ul li{
+    margin: 0 auto;
+    width: 12%;
+    border: 0 none;
+    font-size: 12px;
+    text-align: center;
+    float: right;
+    vertical-align: 50%;
+}
+
+#mainNav ul li a{
+    color: #ffffff;
+}
+
+#mainNav ul li a{
+    color: #ffffff;
+    font: 14px Segoeuil;
+}
+
+#mainNav ul li:first-child{
+    text-align: center;
+    width: 15%;
+}
+
+#mainNav ul li:nth-child(2){
+    width: 21%;
+}
+#map{
+    display: inline-block;
+    background: #f1f1f1;
+    height: 27px;
+    width: 89px;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    padding: 10px 0 0 0 ;
+}
+
+#map:visited{
+    background: #f1f1f1;
+}
+
+#list{
+    display: inline-block;
+    height: 24px;
+    width: 89px;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    background: #1E9FDD;
+    padding: 10px 0 0 0;
+    color: #ffffff;
+}
+
+#list a{
+    color: #ffffff;
+}
+
+
+#searchForm{
+    width:250px;
+    /*top: 43px;
+    left: 0;*/
+    margin: 0 auto;
+    /* position: fixed;*/
+}
+
+/*-----------------------------------------------Sliding Menu---------------------------------------------------*/
+
+#menuRight {
+    background: #222222;
+    border-right: 3px solid #ee4e1d;
+    width: 100px;
+    padding: 30px;
+    position: fixed;
+    z-index: 100000;
+
+    box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+}
+
+#menuRight {
+    right: -80px; /* Change to right: 0; if you want the panel to display on the right side. */
+
+}
+
+#menuRight:hover, #menu:focus {
+    right: 0 !important; /* Change to right: 0 !important; if you want the panel to display on the right side. */
+    transition: 0.7s ;
+}
+
+#menuRight .arrow {
+    left: 2px; /* Change to left: 2px; if you want the panel to display on the right side. */
+}
+
+#menuRight .arrow {
+    /*font: normal 400 25px/25px 'Acme', Helvetica, Arial, sans-serif;  Acme font is required for .arrow */
+    color: rgba(0,0,0,0.75); /* Arrow color */
+    width: 16px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    cursor: default;
+}
+
+#menuRight:hover .arrow {
+    transform: rotate(-180deg) translate(6px,-3px);
+    -moz-transform: rotate(-180deg) translate(6px,-3px);
+    -webkit-transform: rotate(-180deg) translate(6px,-3px);
+}
+
+#menuRight nav {
+    position: relative;
+    top: 10px;
+}
+
+#menuRight nav a {
+    padding: 10px 5px;
+    border-bottom: 1px dotted #c0c0c0;
+    display: block;
+    clear: both;
+    font: bold 13px/18px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #999;
+    text-decoration: none;
+}
+
+#menuRight nav a:hover {
+    color: #ee4e1d;
+}
+
+/*---------------------------Left Menu-------------------------------------*/
+#menuLeft {
+    background: #222222;
+    border-left: 3px solid #ee4e1d;
+    width: 100px;
+    padding: 30px;
+    position: fixed;
+    z-index: 100000;
+
+    box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 4px 0 10px rgba(0,0,0,0.25);
+}
+
+#menuLeft {
+    left: -80px; /* Change to right: 0; if you want the panel to display on the right side. */
+
+}
+
+#menuLeft:hover, #menu:focus {
+    left: 0 !important; /* Change to right: 0 !important; if you want the panel to display on the right side. */
+    transition: 0.7s ;
+}
+
+#menuLeft .arrow {
+    right: 2px; /* Change to left: 2px; if you want the panel to display on the right side. */
+}
+
+#menuLeft .arrow {
+    /*font: normal 400 25px/25px 'Acme', Helvetica, Arial, sans-serif;  Acme font is required for .arrow */
+    color: rgba(0,0,0,0.75); /* Arrow color */
+    width: 16px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    cursor: default;
+}
+
+#menuLeft:hover .arrow {
+    transform: rotate(-180deg) translate(6px,-3px);
+    -moz-transform: rotate(-180deg) translate(6px,-3px);
+    -webkit-transform: rotate(-180deg) translate(6px,-3px);
+}
+
+#menuLeft nav {
+    position: relative;
+    top: 10px;
+}
+
+#menuLeft nav a {
+    padding: 10px 5px;
+    border-bottom: 1px dotted #c0c0c0;
+    display: block;
+    clear: both;
+    font: bold 13px/18px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #999;
+    text-decoration: none;
+}
+
+#menuLeft nav a:hover {
+    color: #ee4e1d;
+}

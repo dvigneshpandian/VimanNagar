@@ -1,0 +1,18 @@
+//CopyRight Tag Solutions pvt.ltd 2013
+doctype 5
+html
+    head(lang="en")
+        title LSR
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        script(type='text/javascript', src='/javascripts/jquery-1.7.1.js')
+    body
+        form#form(method="post", action="/loggedin")
+            div#form-div
+                input#email(type="email", name="email", placeholder="Email")
+                input#password(type="password", name="password", placeholder="password")
+            input(type="checkbox",id="checkbox")
+            p#remember Remember me
+            p#forgot Forgot password?
+                a  Reset it
+            div#button
+                input#submit(type="submit", value="Login", id="login")
